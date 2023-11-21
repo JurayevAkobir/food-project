@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,24 +16,78 @@
     <!-- custom css -->
     <link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body>
-    
+
     <div class="wrapper">
 
         <!-- header -->
         <header class="header">
-            
+            <div class="container d-flex align-items-center">
+                <a href="#!" class="header__logo">LOGOS</a>
+                <div class="header_contact d-flex align-items-center">
+                    <div class="header_search-box position-relative">
+                        <img class="header_location-icon position-absolute" src="images/icons/location.svg"
+                            alt="location">
+                        <input class="header_search w-100" type="text" name="search"
+                            placeholder="Введите адрес доставки">
+                        <img class="header_search-icon position-absolute" src="images/icons/search.svg" alt="search">
+                    </div>
+                    <div class="header_contact-box d-flex align-items-center">
+                        <div class="phone-bg">
+                            <img src="images/icons/phone.svg" alt="phone">
+                        </div>
+                        <div class="header_contact-number">
+                            <span>Контакты:</span>
+                            <a href="tel:+7 (917) 510-57-59">+7 (917) 510-57-59</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_cart-btn ms-auto">
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Корзина
+                        <span class="product-value">4</span>
+                    </button>
+                </div>
+            </div>
         </header>
 
         <!-- main -->
         <main class="main">
-
+            <section class="intro">
+                <div class="container">
+                    <div class="intro_content">
+                        <h1 class="intro_content-title">Доставка ВКУСНЕЙШИХ <br>БЛЮд за 60 минут</h1>
+                        <a class="intro_content-btn" href="#!">Ещё не пробовал?</a>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- footer -->
         <footer class="footer">
 
         </footer>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- bootstrap js -->
@@ -43,4 +98,5 @@
     <script src="js/main.js"></script>
 
 </body>
+
 </html>

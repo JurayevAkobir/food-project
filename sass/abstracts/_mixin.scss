@@ -1,0 +1,16 @@
+@mixin search-icon($left: auto, $right: auto) {
+    top: 50%;
+    transform: translateY(-50%);
+    left: $left;
+    right: $right;
+    cursor: pointer;
+}
+
+@mixin center($position: inherit, $top:auto, $bottom:auto, $left: auto, $right:auto){
+    position: $position;
+    top: $top;
+    bottom: $bottom;
+    right: $right;
+    left: $left;
+    transform: translateY(-50%);
+}
