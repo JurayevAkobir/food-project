@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Zing Rust Demo Base';
+    src: url('ZingRustDemo-Base.eot');
+    src: url('ZingRustDemo-Base.eot?#iefix') format('embedded-opentype'),
+        url('ZingRustDemo-Base.woff2') format('woff2'),
+        url('ZingRustDemo-Base.woff') format('woff'),
+        url('ZingRustDemo-Base.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
