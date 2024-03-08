@@ -164,7 +164,7 @@
             margin-top: 9px;
         }
 
-        &__contact-box {
+        &__contact-box {    
             display: flex;
             justify-content: center !important;
             top: 0;
@@ -177,10 +177,12 @@
             transition: 0.4s all linear !important;
 
             .phone-bg {
-                top: 46px;
-                left: 28px;
+                position: absolute;
+                top: 20%;
+                left: 22%;
             }
             .header__contact-number {
+                position: absolute;
                 top: 40px;
                 .tel {
                     font-size: 12px;

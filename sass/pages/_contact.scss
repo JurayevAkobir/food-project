@@ -1,6 +1,130 @@
 @use "../abstracts/variables";
 
 
-.delivery {
-    
+.wrapper {
+    .main {
+
+        .delivery {
+
+            .d-flex {
+                justify-content: space-between;
+
+                .accordion {
+                    margin-right: 20px;
+
+                    .accordion-item {
+                        margin-bottom: 10px;
+                        border-radius: 10px;
+                        background: linear-gradient(132.71deg, rgb(97, 137, 103) 4.848%, rgb(114, 164, 121) 95.899%) !important;
+
+                        .accordion-header {
+
+                            .accordion-button {
+                                width: 100%;
+                                padding: 16px 27px 17px 30px;
+                                border-radius: 10px;
+                                background: linear-gradient(132.71deg, rgb(97, 137, 103) 4.848%, rgb(114, 164, 121) 95.899%) !important;
+
+                                h4 {
+                                    color: variables.$white;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    line-height: 35px;
+                                    letter-spacing: 0%;
+                                }
+                            }
+
+                            .accordion-button:focus {
+                                display: none;
+                            }
+                        }
+
+                        .accordion-collapse {
+                            width: 100%;
+                            border-radius: 10px;
+                            background-color: #4C4847 !important;
+
+                            .accordion-body {
+                                padding: 35px 30px;
+
+                                p {
+                                    color: variables.$white;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 25px;
+                                    letter-spacing: 0%;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                .map-box {
+                    width: 100%;
+                }
+            }
+
+            .texts_box {
+                margin-top: 30px;
+                margin-bottom: 37px;
+                
+                .time,
+                .order_texts {
+                    h4 {
+                        color: variables.$white;
+                        font-size: 22px;
+                        font-weight: 700;
+                        line-height: 35px;
+                        letter-spacing: 0%;
+                    }
+
+                    p {
+                        color: rgb(207, 207, 207);
+                        font-size: 22px;
+                        font-weight: 400;
+                        line-height: 35px;
+                        letter-spacing: 0%;
+                    }
+                }
+
+                .time {
+                    max-width: 100%;
+                    width: 630px;
+                }
+
+                .order_texts {
+                    max-width: 100% ;
+                    width: 697px;
+                }
+            }
+        }
+
+        
+
+    }
+
+    .margin {
+        margin: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+// ! Media 
+@media (max-width: 990px) {
+    .delivery {
+        .d-flex {
+            flex-direction: column !important;
+
+            .map-box {
+                display: none !important;
+            }
+
+            .map-box_2 {
+                display: flex !important;
+                margin-bottom: 40px;
+            }
+        }
+    }
 }
