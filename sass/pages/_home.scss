@@ -1,14 +1,24 @@
+@use "../abstracts/variables";
+
+.container {
+    padding: 0;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
 .intro {
     background-image: url(../../images/ibg-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 72px 0 137px 0;
 
-    &_content {
+    &__content {
         max-width: 613px;
         text-align: center;
     }
-    &_content-title {
+
+    &__content-title {
         color: variables.$white;
         text-align: center;
         font-family: "Zing Rust Demo Base";
@@ -17,15 +27,342 @@
         line-height: 109.2%;
         transform: rotate(-8.368deg);
         margin-top: 33px;
+        text-shadow: -7px 4px 0px rgba(255, 255, 255, 0.25);
     }
 }
 
-.intro_content-btn {
-    color:  variables.$white;
-    font-family: "Zing Rust Demo Base";
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 109.2%;
-    padding: 5px 23px;
-    background: variables.$btn-gradient;
+.border_bottom {
+    border-bottom: 1px solid variables.$border-bottom !important;
+
+}
+
+.menu {
+
+    &__navbar {
+        ul {
+            padding-left: 80px;
+            margin: 0;
+
+            li {
+                padding: 29px 0px;
+                list-style: none;
+
+                // .active {
+                //     color: variables.$white;
+                //     border-bottom: 3px solid variables.$dark-green;
+                // }
+
+                &:hover {
+                    border-bottom: 1px solid variables.$green;
+                }
+
+                &:focus {
+                    color: variables.$white;
+                    border-bottom: 3px solid variables.$dark-green;
+                }
+
+                a {
+                    margin: 0 13px;
+                    color: variables.$white-gray;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.our-cafe {
+    margin: 93px 37px 100px 40px;
+    background: linear-gradient(90deg, #211F20 0%, rgba(68, 64, 63, 0.00) 100%);
+
+    &__big-box {
+        background-image: url(../../images/our-cafe-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .boxes {
+            position: relative;
+            justify-content: space-around;
+            background-image: url(../../images/texts-img.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 1;
+
+            .texts-box {
+                padding: 100px 0 100px 70px;
+
+                h1 {
+                    color: #FFF;
+                    font-size: 32px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    padding: 26px 0 60px 0;
+                    width: 563px;
+                    color: #CFCFCF;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 25px;
+                }
+            }
+
+            .four-boxes {
+                margin: 71px 0;
+
+                .box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 8px;
+                    width: 228px;
+                    height: 227px;
+                    background: rgba(80, 75, 74, 0.90);
+
+                    &:hover {
+                        box-shadow: 0px 40px 50px 0px rgba(0, 0, 0, 0.40);
+
+                        .img-svg svg path {
+                            fill: variables.$green;
+                        }
+
+                        h4 {
+                            color: variables.$green;
+                        }
+                    }
+
+                    h4 {
+                        margin-top: 31px;
+                        color: variables.$white;
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+.connections {
+    .map-box {
+        top: -250px;
+        z-index: -1;
+    }
+
+    &__box {
+        z-index: 1;
+        margin-left: 109px;
+        margin-bottom: 40px;
+        width: 526px;
+        border-radius: 15px;
+        background: #2E2B2C;
+        box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.15);
+
+        .title {
+            padding-top: 25px;
+
+            a {
+                margin-left: 43px;
+                color: variables.$white;
+                font-size: 30px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+
+        .line-box {
+            margin-top: 26px;
+        }
+
+        .small-boxes {
+            margin-left: 52px;
+
+            img {
+                margin-right: 11px;
+            }
+
+            .small-box-t {
+                margin-top: 20px;
+
+                h5 {
+                    color: variables.$white-gray;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                p {
+                    color: variables.$white;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .phone-box {
+
+            margin-top: 17px;
+            margin-left: 52px;
+
+            .phone-box-t {
+                margin-left: 33px;
+
+                a {
+                    color: variables.$white;
+                    font-size: 23px;
+                    font-weight: 700;
+                }
+
+                p {
+                    color: variables.$white-gray;
+                    text-align: right;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .social-networks {
+            margin: 30px 0 0 152px;
+            padding-bottom: 24px;
+
+            h4 {
+                color: variables.$white;
+                font-size: 16px;
+                font-weight: 600;
+                margin-right: 26px;
+            }
+
+            .networks {
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    .modal-content {
+        border-radius: 10px;
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        width: 458px;
+
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+
+            .logo-text {
+                margin: 0 auto;
+
+                img {
+                    margin-left: 90px;
+                }
+
+                h2 {
+                    margin: 14px 0px 43px 0;
+                    color: variables.$white;
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+
+            }
+
+            .btn-secondary {
+                margin: 0 auto 63px auto;
+                width: 188px;
+            }
+        }
+    }
+}
+
+// ! Media
+
+@media (max-width: 1280px) {
+    .menu {
+
+        &__navbar {
+            ul {
+
+                li {
+
+                    a {
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .our-cafe {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        &__navbar {
+            ul {
+                overflow-x: scroll;
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .intro {
+
+        &__content-title {
+            font-size: 55px;
+            font-weight: 250;
+            line-height: 90.2%;
+            margin-top: 23px;
+            text-shadow: -7px 4px 0px rgba(255, 255, 255, 0.25);
+        }
+
+        .intro__content-btn {
+            color: #fff;
+            font-size: 18px;
+            line-height: 90.2%;
+            padding: 5px 18px;
+            margin-top: 14px;
+
+        }
+    }
+}
+
+@media (max-width: 710px) {
+    .intro {
+        padding: 27px 0 88px 0;
+        background-size: contain;
+
+        .intro__content {
+            margin-left: 40px;
+            text-align: start !important;
+
+            .intro__content-title {
+                margin-bottom: 33px;
+                text-align: start !important;
+                font-size: 25px;
+                font-weight: 200;
+                letter-spacing: 0%;
+                margin-top: 0 !important;
+            }
+
+            .intro__content-btn {
+                font-size: 15px;
+                font-weight: 100;
+                letter-spacing: 0%;
+
+            }
+        }
+
+    }
 }

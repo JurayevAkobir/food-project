@@ -1,0 +1,125 @@
+@use "../abstracts/variables";
+
+
+.snacks {
+    padding-bottom: 50px;
+
+    &__title {
+        border-left: 4px solid variables.$dark-green;
+        padding-left: 19px;
+        margin: 52px 0 54px 91px;
+
+        h1 {
+            color: variables.$white;
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+
+    &__swiper {
+        margin-left: 5px;
+
+        .snacks__slide {
+
+            .slide-box {
+                width: 310px;
+                border-radius: 10px;
+                background: variables.$bg-color;
+
+                &:hover {
+                    box-shadow: 0px 30px 45px 0px rgba(43, 40, 40, 0.60);
+                }
+
+                .snack-img {
+                    position: relative;
+
+                    img {
+                        border-top-right-radius: 10px;
+                        border-top-left-radius: 10px;
+                    }
+
+                    .number {
+                        top: -10px;
+                        right: -15px;
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px 20px;
+                        background: variables.$green;
+                        border-radius: 50%;
+                        color: variables.$white;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+
+                .slide-box_texts {
+                    padding: 14px 16px 18px 20px;
+
+                    .t-d {
+                        justify-content: space-between;
+
+                        h2 {
+                            color: variables.$white;
+                            font-size: 22px;
+                            font-weight: 700;
+                        }
+
+                        h4 {
+                            color: variables.$white;
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    p {
+                        color: #CFCFCF;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 17px;
+                    }
+
+                    .m-b {
+                        margin-bottom: 34px;
+                    }
+
+                    .btn-box {
+                        margin-top: 15px;
+                        justify-content: space-between;
+
+                        .btn-b {
+                            margin-bottom: 4px;
+                        }
+
+                        .btn {
+                            .m {
+                                margin-right: 10px;
+                            }
+
+                            .p {
+                                margin-right: 10px;
+                            }
+
+                            &:hover {
+                                box-shadow: 0px 5px 10px 0px rgba(114, 163, 121, 0.70);
+                            }
+                        }
+
+                        h2 {
+                            color: #FFF;
+                            font-family: Gilroy;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

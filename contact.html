@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food project</title>
+    <!-- Gilroy font -->
+    <link rel="stylesheet" href="./fonts/gilroy/stylesheet.css">
+    <!-- zing-rust-demo font -->
+    <link rel="stylesheet" href="./fonts/zing-rust-demo/stylesheet.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./libs/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header">
+            <div class="container d-flex align-items-center">
+                <a class="header__logo" href="index.html">LOGOS</a>
+                <div class="header__contact d-flex align-items-center">
+                    <div class="header__search-box position-relative">
+                        <img class="header__location-icon position-absolute" src="./images/icons/location.svg"
+                            alt="location icon">
+                        <input class="header__search w-100" type="text" name="search"
+                            placeholder="Введите адрес доставки">
+                        <img class="header__search-icon position-absolute" src="./images/icons/search.svg"
+                            alt="search icon">
+                    </div>
+
+                    <div class="header__contact-box d-flex align-items-center">
+                        <div class="phone-bg">
+                            <img src="./images/icons/calling.svg" alt="calling icon">
+                        </div>
+                        <div class="header__contact-number">
+                            <span>Контакты:</span>
+                            <a href="tel:+7(917)510-57-59">+7 (917) 510-57-59</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__cart-btn ms-auto">
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Корзина
+                        <span class="product__value">4</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main class="main">
+            <section class="menu">
+                <div class="menu__navbar">
+                    <nav class="menu__nav">
+                        <ul class="d-flex">
+                            <li>
+                                <a class="active" href="#!">Холодные закуски</a>
+                            </li>
+                            <li>
+                                <a href="#!">Горячие закуски</a>
+                            </li>
+                            <li>
+                                <a href="#!"> Мясные блюда</a>
+                            </li>
+                            <li>
+                                <a href="#!">Супы</a>
+                            </li>
+                            <li>
+                                <a href="#!">Рыбные блюда</a>
+                            </li>
+                            <li>
+                                <a href="#!">Гриль меню </a>
+                            </li>
+                            <li>
+                                <a href="#!">Фирменные блюда </a>
+                            </li>
+                            <li>
+                                <a href="#!">Напитки</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-title">
+                    <div class="snacks__title">
+                        <h1>Условия доставки</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!-- delivery -->
+            <section class="delivery">
+                <div class="container d-flex">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <h4>У наших курьеров всегда должна быть сдача!</h4>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <h4>Вам что-то не довезли?</h4>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <h4>Не понравился продукт?</h4>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    <h4>Если появились замечания</h4>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    <h4>Оплата Visa, MasterCard и МИР</h4>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    <h4>Реквизиты</h4>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body"><p>Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-box">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25375.706304920994!2d67.2325516306885!3d37.343377823402264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f353703ef7f50eb%3A0xaaa8595da005fad8!2sUchkyzyl!5e0!3m2!1sen!2s!4v1700989000442!5m2!1sen!2s"
+                            style="background: #000; " allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" width="639" height="610px"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__boxes d-flex">
+                <div class="top-btn">
+                    <a href="#">
+                        <img src="images/icons/top.svg" alt="top">
+                    </a>
+                </div>
+                <div class="text-one-box">
+                    <a class="header__logo" href="#!">LOGOS</a>
+                    <h5>© ООО СК «АПШЕРОН» Все права защищены. 2010-2020</h5>
+                    <h4>Пользовательское соглашение</h4>
+                    <h4 class="w">Карта сайта</h4>
+                    <h4>Политика конфиденциальности</h4>
+                </div>
+                <div class="text-two-box">
+                    <ul class="d-flex">
+                        <li>
+                            <h2>О ресторане</h2>
+                        </li>
+                        <li>
+                            <h2>Условия доставки</h2>
+                        </li>
+                        <li>
+                            <h2>Возврат товара</h2>
+                        </li>
+                        <li>
+                            <h2>Акции</h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- modal section -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="text-end" type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                            <g clip-path="url(#clip0_72_2828)">
+                                <path
+                                    d="M20.0111 16.8379L16.5016 13.3284L20.0111 9.81893C20.8733 8.9567 20.8549 7.52675 19.9923 6.66422C19.1298 5.80168 17.6999 5.78327 16.8376 6.64549L13.3281 10.155L9.81862 6.64549C8.9564 5.78327 7.52645 5.80168 6.66391 6.66422C5.80137 7.52675 5.78296 8.9567 6.64519 9.81893L10.1547 13.3284L6.64519 16.8379C5.78296 17.7002 5.80137 19.1301 6.66391 19.9926C7.52645 20.8552 8.9564 20.8736 9.81862 20.0114L13.3281 16.5019L16.8376 20.0114C17.6998 20.8736 19.1298 20.8552 19.9923 19.9926C20.8549 19.1301 20.8733 17.7002 20.0111 16.8379Z"
+                                    fill="white" />
+                            </g>
+                        </svg>
+                    </button>
+                    <div class="logo-text">
+                        <img class="d-flex" src="images/icons/cart.svg" alt="cart" width="76px" height="89px">
+                        <h2>КОРЗИНА ПУСТАЯ</h2>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Посмотреть меню</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./libs/swiper/swiper.min.js"></script>
+    <!-- custom js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

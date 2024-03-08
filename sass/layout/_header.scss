@@ -1,9 +1,53 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixin";
 
+@media (min-width:1280px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1272px !important;
+    }
+}
+
 .header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
     padding: 23px 0;
+
+    .menu_media {
+        display: none;
+
+        .menu_lines {
+            margin-bottom: 5px;
+            margin-left: 5px;
+
+            .menu_line {
+                width: 25px;
+                height: 3px;
+                left: 83.78%;
+                right: -51.35%;
+                top: 95.26%;
+                bottom: -3.2%;
+                border-radius: 50px;
+
+                background: rgb(101, 144, 108);
+            }
+
+            .margin_b {
+                margin-bottom: 4px;
+            }
+        }
+
+        p {
+            color: variables.$white;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+            letter-spacing: 0%;
+        }
+    }
 
     &__logo {
         color: variables.$white;
@@ -12,12 +56,13 @@
         line-height: 25px;
         letter-spacing: 3.75px;
     }
-    &_search-box {
+
+    &__search-box {
         margin: 0 30px 0 72px;
         width: 555px;
     }
 
-    &_search {
+    &__search {
         color: variables.$white-gray;
         font-size: 18px;
         border: none;
@@ -25,18 +70,20 @@
         background-color: variables.$input-bgcolor;
         border-radius: 10px;
     }
-    &_search::placeholder {
+
+    &__search::placeholder {
         color: variables.$white-gray;
     }
 
-    &_location-icon {
+    &__location-icon {
         @include mixin.search-icon($left: 18px)
     }
-    &_search-icon {
+
+    &__search-icon {
         @include mixin.search-icon($right: 19px)
     }
 
-    &_contact-box {
+    &__contact-box {
 
         .phone-bg {
             background-color: variables.$dark-green;
@@ -46,19 +93,137 @@
             line-height: 32px;
         }
     }
-    &_contact-number {
+
+
+    &__contact-number {
         margin-left: 10px;
+
         span {
             display: block;
             color: variables.$white-gray;
             font-size: 12px;
             line-height: 20px;
         }
+
         a {
             color: variables.$white;
             font-size: 16px;
             font-weight: 700;
             line-height: 20px;
+        }
+    }
+
+    &__cart-btn {
+
+        .btn {
+            display: flex;
+            align-items: center;
+
+        }
+    }
+}
+
+.header {
+    .d-flex {
+
+        justify-content: space-between;
+    }
+}
+
+// ! media
+
+@media (max-width: 1200px) {
+    .header {
+        &__search-box {
+            margin: 0 30px 0 72px;
+            width: 325px !important;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .header {
+        justify-content: space-between !important;
+
+        .menu_media {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__search-box {
+            margin: 0 10px 0 12px !important;
+            width: 325px !important;
+        }
+
+        &__search-box {
+            display: none;
+        }
+
+        &__search-box_media {
+            display: flex !important;
+            margin-top: 9px;
+        }
+
+        &__contact-box {
+            display: flex;
+            justify-content: center !important;
+            top: 0;
+            z-index: 999;
+            width: 35% !important;
+            height: 100% !important;
+            background-color: rgb(59, 59, 59);
+            position: fixed;
+            right: -35%;
+            transition: 0.4s all linear !important;
+
+            .phone-bg {
+                top: 46px;
+                left: 28px;
+            }
+            .header__contact-number {
+                top: 40px;
+                .tel {
+                    font-size: 12px;
+                }
+            }
+
+            .d-none {
+                right: -45px;
+                top: -25px;
+                display: flex !important;
+            }
+        }
+
+        &__contact-box_2 {
+            right: 0;
+            transition: 0.4s all linear !important;
+        }
+
+
+
+        &__cart-btn {
+            margin-left: 0 !important;
+            padding: 0;
+            flex-direction: column !important;
+
+            .btn {
+                flex-direction: column;
+                padding: 4px 13px 14px 14px;
+
+                p {
+                    padding-top: 5px;
+                    border-top: 1px solid rgba(255, 255, 255, 0.3);
+                }
+
+                .product__value {
+                    display: none !important;
+                }
+
+                .d-none {
+                    margin-bottom: 5px;
+                    display: flex !important;
+                }
+            }
         }
     }
 }
