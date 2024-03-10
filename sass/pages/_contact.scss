@@ -20,7 +20,7 @@
                         .accordion-header {
 
                             .accordion-button {
-                                width: 100%;
+                                width: 638px;
                                 padding: 16px 27px 17px 30px;
                                 border-radius: 10px;
                                 background: linear-gradient(132.71deg, rgb(97, 137, 103) 4.848%, rgb(114, 164, 121) 95.899%) !important;
@@ -68,7 +68,7 @@
             .texts_box {
                 margin-top: 30px;
                 margin-bottom: 37px;
-                
+
                 .time,
                 .order_texts {
                     h4 {
@@ -94,13 +94,13 @@
                 }
 
                 .order_texts {
-                    max-width: 100% ;
+                    max-width: 100%;
                     width: 697px;
                 }
             }
         }
 
-        
+
 
     }
 
@@ -112,19 +112,38 @@
 }
 
 // ! Media 
-@media (max-width: 990px) {
-    .delivery {
-        .d-flex {
-            flex-direction: column !important;
+// @media (max-width: 990px) {
+//     .delivery {
+//         .d-flex {
+//             flex-direction: column !important;
 
-            .map-box {
-                display: none !important;
-            }
+//             .accordion {
+//                 .accordion-item {
 
-            .map-box_2 {
-                display: flex !important;
-                margin-bottom: 40px;
-            }
-        }
-    }
-}
+//                     .accordion-header {
+
+//                         .accordion-button {
+//                             width: 100%;
+
+//                         }
+
+//                         .accordion-button:focus {
+//                             display: none;
+//                         }
+//                     }
+
+
+//                 }
+//             }
+
+//             .map-box {
+//                 display: none !important;
+//             }
+
+//             .map-box_2 {
+//                 display: flex !important;
+//                 margin-bottom: 40px;
+//             }
+//         }
+//     }
+// }

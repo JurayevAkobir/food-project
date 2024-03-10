@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 
-
+// * Intro start
 .intro {
     background-image: url(../../images/ibg-bg.png);
     background-repeat: no-repeat;
@@ -30,15 +30,20 @@
         text-shadow: -7px 4px 0px rgba(255, 255, 255, 0.25);
     }
 }
+// * Intro end
+
 
 .border_bottom {
     border-bottom: 1px solid variables.$border-bottom !important;
 
 }
 
+
+// * Menu start
 .menu {
 
     &__navbar {
+
         ul {
             justify-content: space-between;
             padding-left: 0px !important;
@@ -71,9 +76,10 @@
         }
     }
 }
+// * Menu end
 
 
-
+// * Our-cafe start
 .our-cafe {
     margin: 93px 37px 100px 40px;
     background: linear-gradient(90deg, #211F20 0%, rgba(68, 64, 63, 0.00) 100%);
@@ -149,8 +155,12 @@
     }
 
 }
+// * Our-cafe end
 
+
+// * Connections start
 .connections {
+
     .map-box {
         left: 0;
         top: -250px;
@@ -207,7 +217,6 @@
         }
 
         .phone-box {
-
             margin-top: 17px;
             margin-left: 52px;
 
@@ -249,6 +258,10 @@
     }
 }
 
+// * Connections end
+
+
+// * Modal start
 .modal {
     .modal-content {
         border-radius: 10px;
@@ -282,8 +295,10 @@
         }
     }
 }
+// * Modal end
 
-// ! Media
+
+// ! Media start
 
 @media (max-width: 1280px) {
     .menu {
@@ -308,16 +323,6 @@
     }
 }
 
-@media (max-width: 1000px) {
-    .menu {
-        &__navbar {
-            ul {
-                overflow-x: scroll !important;
-            }
-        }
-    }
-}
-
 @media (max-width: 990px) {
     .intro {
 
@@ -337,6 +342,12 @@
             margin-top: 14px;
 
         }
+    }
+}
+
+@media (max-width: 790px) {
+    .menu {
+        overflow-x: scroll !important;
     }
 }
 
@@ -368,3 +379,5 @@
 
     }
 }
+
+// ! Media end
