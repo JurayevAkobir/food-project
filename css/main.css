@@ -367,13 +367,13 @@ body {
     height: 100% !important;
     background-color: rgb(59, 59, 59);
     position: fixed;
-    right: -35%;
+    left: -35%;
     transition: 0.4s all linear !important;
   }
   .header__contact-box .phone-bg {
     position: absolute;
-    top: 20%;
-    left: 22%;
+    top: 48px;
+    left: 18%;
   }
   .header__contact-box .header__contact-number {
     position: absolute;
@@ -388,7 +388,7 @@ body {
     display: flex !important;
   }
   .header__contact-box_2 {
-    right: 0;
+    left: 0;
     transition: 0.4s all linear !important;
   }
   .header__cart-btn {
@@ -415,6 +415,34 @@ body {
 @media (max-width: 780px) {
   .header__logo {
     margin-left: 90px;
+  }
+}
+@media (max-width: 780px) {
+  .header__contact-box .phone-bg {
+    display: none;
+  }
+  .header .d-none {
+    right: -35px;
+    top: -25px;
+    display: flex !important;
+  }
+}
+@media (max-width: 550px) {
+  .header .header__contact-number {
+    position: absolute;
+    top: 40px;
+  }
+  .header .header__contact-number .tel {
+    font-size: 9px;
+  }
+  .header .d-none {
+    right: 2px;
+    top: -25px;
+    display: flex !important;
+  }
+  .header .d-none svg {
+    width: 16px;
+    height: 16px;
   }
 }
 .footer {

@@ -133,6 +133,7 @@
         justify-content: space-between;
     }
 }
+
 // * Header end
 
 // ! Media start
@@ -163,7 +164,7 @@
         &__logo {
             margin-left: 160px;
         }
-    
+
 
         &__search-box {
             display: none;
@@ -174,7 +175,7 @@
             margin-top: 9px;
         }
 
-        &__contact-box {    
+        &__contact-box {
             display: flex;
             justify-content: center !important;
             top: 0;
@@ -183,17 +184,19 @@
             height: 100% !important;
             background-color: rgb(59, 59, 59);
             position: fixed;
-            right: -35%;
+            left: -35%;
             transition: 0.4s all linear !important;
 
             .phone-bg {
                 position: absolute;
-                top: 20%;
-                left: 22%;
+                top: 48px;
+                left: 18%;
             }
+
             .header__contact-number {
                 position: absolute;
                 top: 40px;
+
                 .tel {
                     font-size: 12px;
                 }
@@ -207,11 +210,9 @@
         }
 
         &__contact-box_2 {
-            right: 0;
+            left: 0;
             transition: 0.4s all linear !important;
         }
-
-
 
         &__cart-btn {
             margin-left: 0 !important;
@@ -240,12 +241,61 @@
     }
 }
 
-@media (max-width: 780px){
+@media (max-width: 780px) {
     .header {
         &__logo {
             margin-left: 90px;
         }
     }
 }
+
+
+@media (max-width: 780px) {
+    .header {
+        &__contact-box {
+            .phone-bg {
+                display: none;
+            }
+        }
+
+        .d-none {
+            right: -35px;
+            top: -25px;
+            display: flex !important;
+        }
+    }
+
+    
+}
+
+@media (max-width: 550px) {
+    .header {
+      
+
+        .header__contact-number {
+            position: absolute;
+            top: 40px;
+
+            .tel {
+                font-size: 9px;
+            }
+        }
+
+        .d-none {
+            right: 2px;
+            top: -25px;
+            display: flex !important;
+            
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    
+}
+
+
 
 // ! Media end
